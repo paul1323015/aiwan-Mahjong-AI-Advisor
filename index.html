@@ -806,11 +806,11 @@
                                 <i class="fa-solid fa-list-ol mr-1"></i> 1. 挑戰題數設定 (Question Count)
                             </label>
                             <div class="grid grid-cols-5 gap-1.5">
-                                <button onclick="selectPracticeLength(10)" data-practice-len="10" id="btn-len-10" class="py-2 rounded-lg text-xs font-black bg-emerald-900 text-emerald-300 border border-emerald-700">10 題</button>
-                                <button onclick="selectPracticeLength(20)" data-practice-len="20" id="btn-len-20" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">20 題</button>
-                                <button onclick="selectPracticeLength(50)" data-practice-len="50" id="btn-len-50" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">50 題</button>
-                                <button onclick="selectPracticeLength(100)" data-practice-len="100" id="btn-len-100" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">100 題</button>
-                                <button onclick="selectPracticeLength(9999)" data-practice-len="9999" id="btn-len-endless" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800" title="答錯才會結束的無盡挑戰！">無盡 ♾️</button>
+                                <button onclick="selectPracticeLength(10)" id="btn-len-10" class="py-2 rounded-lg text-xs font-black bg-emerald-900 text-emerald-300 border border-emerald-700">10 題</button>
+                                <button onclick="selectPracticeLength(20)" id="btn-len-20" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">20 題</button>
+                                <button onclick="selectPracticeLength(50)" id="btn-len-50" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">50 題</button>
+                                <button onclick="selectPracticeLength(100)" id="btn-len-100" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">100 題</button>
+                                <button onclick="selectPracticeLength(9999)" id="btn-len-endless" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800" title="答錯才會結束的無盡挑戰！">無盡 ♾️</button>
                             </div>
                         </div>
 
@@ -819,24 +819,9 @@
                                 <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 2. 題型庫出題模式
                             </label>
                             <div class="grid grid-cols-3 gap-1.5">
-                                <button onclick="selectPracticeMode('classic')" data-practice-mode="classic" id="btn-pmode-classic" class="py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800" title="30題手工嚴選的高難牌型">經典手創</button>
-                                <button onclick="selectPracticeMode('random')" data-practice-mode="random" id="btn-pmode-random" class="py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800" title="算法實時生成的全新排面">AI 隨機生成</button>
-                                <button onclick="selectPracticeMode('mixed')" data-practice-mode="mixed" id="btn-pmode-mixed" class="py-2 rounded-lg text-xs font-bold bg-emerald-900 text-emerald-300 border border-emerald-700" title="混合手創經典與算法生成題型">大師混合 🔮</button>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-bold text-rose-400 mb-2 uppercase tracking-wider">
-                                <i class="fa-solid fa-clock mr-1"></i> 3. 限時計時挑戰 (Countdown)
-                            </label>
-                            <div class="grid grid-cols-4 sm:grid-cols-7 gap-1.5">
-                                <button onclick="selectPracticeTimer(0)" data-practice-timer="0" class="py-2 rounded-lg text-xs font-black bg-emerald-900 text-emerald-300 border border-emerald-700">不限時</button>
-                                <button onclick="selectPracticeTimer(30)" data-practice-timer="30" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">30 秒</button>
-                                <button onclick="selectPracticeTimer(60)" data-practice-timer="60" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">1 分鐘</button>
-                                <button onclick="selectPracticeTimer(120)" data-practice-timer="120" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">2 分鐘</button>
-                                <button onclick="selectPracticeTimer(180)" data-practice-timer="180" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">3 分鐘</button>
-                                <button onclick="selectPracticeTimer(300)" data-practice-timer="300" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">5 分鐘</button>
-                                <button onclick="selectPracticeTimer(600)" data-practice-timer="600" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">10 分鐘</button>
+                                <button onclick="selectPracticeMode('classic')" id="btn-pmode-classic" class="py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800" title="30題手工嚴選的高難牌型">經典手創</button>
+                                <button onclick="selectPracticeMode('random')" id="btn-pmode-random" class="py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800" title="算法實時生成的全新排面">AI 隨機生成</button>
+                                <button onclick="selectPracticeMode('mixed')" id="btn-pmode-mixed" class="py-2 rounded-lg text-xs font-bold bg-emerald-900 text-emerald-300 border border-emerald-700" title="混合手創經典與算法生成題型">大師混合 🔮</button>
                             </div>
                         </div>
                     </div>
@@ -849,13 +834,6 @@
 
                 <!-- 2. 挑戰進行中畫面 -->
                 <div id="practice-quiz-screen" class="hidden space-y-6">
-                    <!-- 限時倒數計時 -->
-                    <div id="quiz-timer-box" class="hidden flex items-center justify-center space-x-3 bg-rose-950/30 border border-rose-900/40 rounded-2xl py-3 px-4">
-                        <i id="quiz-timer-icon" class="fa-solid fa-clock text-rose-400"></i>
-                        <span class="text-xs font-bold text-rose-400">剩餘時間</span>
-                        <span id="quiz-timer-display" class="text-xl font-black text-rose-300 hud-font tabular-nums">5:00</span>
-                    </div>
-
                     <!-- 進度與得分列 -->
                     <div class="flex justify-between items-center bg-slate-950/40 p-4 rounded-2xl border border-emerald-950/60">
                         <div class="flex items-center space-x-2">
@@ -869,58 +847,6 @@
                         <div class="flex items-center space-x-2">
                             <span class="text-xs font-bold text-amber-400">目前答對：</span>
                             <span id="quiz-score-num" class="text-xs font-black text-amber-400 hud-font">0 題</span>
-                        </div>
-                    </div>
-
-                    <!-- 測驗中設定調整 -->
-                    <div class="space-y-3">
-                        <button onclick="toggleQuizSettingsPanel()" id="btn-toggle-quiz-settings" class="w-full py-2.5 rounded-xl bg-slate-950/60 border border-emerald-900/40 text-emerald-400 font-bold text-xs hover:bg-slate-900/80 transition-all flex items-center justify-center space-x-2">
-                            <i class="fa-solid fa-sliders"></i>
-                            <span>調整挑戰題數與出題模式</span>
-                            <i id="quiz-settings-chevron" class="fa-solid fa-chevron-down text-[10px] transition-transform duration-200"></i>
-                        </button>
-                        <div id="quiz-settings-panel" class="hidden bg-slate-950/80 p-5 rounded-2xl border border-emerald-900/50 text-left space-y-4">
-                            <p class="text-[10px] text-slate-500 leading-relaxed">調整後按「套用設定」即可立即生效，無需重新整理網頁。</p>
-                            <div>
-                                <label class="block text-xs font-bold text-emerald-400 mb-2 uppercase tracking-wider">
-                                    <i class="fa-solid fa-list-ol mr-1"></i> 挑戰題數設定
-                                </label>
-                                <div class="grid grid-cols-5 gap-1.5">
-                                    <button onclick="selectPracticeLength(10)" data-practice-len="10" class="py-2 rounded-lg text-xs font-black bg-emerald-900 text-emerald-300 border border-emerald-700">10 題</button>
-                                    <button onclick="selectPracticeLength(20)" data-practice-len="20" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">20 題</button>
-                                    <button onclick="selectPracticeLength(50)" data-practice-len="50" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">50 題</button>
-                                    <button onclick="selectPracticeLength(100)" data-practice-len="100" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">100 題</button>
-                                    <button onclick="selectPracticeLength(9999)" data-practice-len="9999" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800" title="答錯才會結束的無盡挑戰！">無盡 ♾️</button>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-amber-400 mb-2 uppercase tracking-wider">
-                                    <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> 題型庫出題模式
-                                </label>
-                                <div class="grid grid-cols-3 gap-1.5">
-                                    <button onclick="selectPracticeMode('classic')" data-practice-mode="classic" class="py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800" title="30題手工嚴選的高難牌型">經典手創</button>
-                                    <button onclick="selectPracticeMode('random')" data-practice-mode="random" class="py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800" title="算法實時生成的全新排面">AI 隨機生成</button>
-                                    <button onclick="selectPracticeMode('mixed')" data-practice-mode="mixed" class="py-2 rounded-lg text-xs font-bold bg-emerald-900 text-emerald-300 border border-emerald-700" title="混合手創經典與算法生成題型">大師混合 🔮</button>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-rose-400 mb-2 uppercase tracking-wider">
-                                    <i class="fa-solid fa-clock mr-1"></i> 限時計時挑戰
-                                </label>
-                                <div class="grid grid-cols-4 sm:grid-cols-7 gap-1.5">
-                                    <button onclick="selectPracticeTimer(0)" data-practice-timer="0" class="py-2 rounded-lg text-xs font-black bg-emerald-900 text-emerald-300 border border-emerald-700">不限時</button>
-                                    <button onclick="selectPracticeTimer(30)" data-practice-timer="30" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">30 秒</button>
-                                    <button onclick="selectPracticeTimer(60)" data-practice-timer="60" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">1 分鐘</button>
-                                    <button onclick="selectPracticeTimer(120)" data-practice-timer="120" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">2 分鐘</button>
-                                    <button onclick="selectPracticeTimer(180)" data-practice-timer="180" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">3 分鐘</button>
-                                    <button onclick="selectPracticeTimer(300)" data-practice-timer="300" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">5 分鐘</button>
-                                    <button onclick="selectPracticeTimer(600)" data-practice-timer="600" class="py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800">10 分鐘</button>
-                                </div>
-                            </div>
-                            <button onclick="applyQuizSettings()" class="w-full py-3 rounded-xl bg-gold-gradient text-slate-950 font-black text-xs shadow-lg shadow-amber-500/20 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-check"></i>
-                                <span>套用設定並重新開始</span>
-                            </button>
                         </div>
                     </div>
 
@@ -3408,145 +3334,50 @@
         let quizActiveQuestions = [];
         let currentQuizIndex = 0;
         let quizCorrectCount = 0;
-        let quizAnsweredCount = 0;
         let hasAnsweredCurrent = false;
 
         // 聽牌訓練設定狀態
         let practiceLength = 10; // 預設 10 題
         let practiceMode = 'mixed'; // classic, random, mixed (預設混合)
-        let practiceTimedSeconds = 0; // 0=不限時, 30/60/120/180/300/600
-        let quizTimerInterval = null;
-        let quizTimeRemaining = 0;
-
-        const PRACTICE_LEN_SELECTED = "py-2 rounded-lg text-xs font-black bg-emerald-900 text-emerald-300 border border-emerald-700";
-        const PRACTICE_LEN_DEFAULT = "py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800";
-        const PRACTICE_MODE_SELECTED = "py-2 rounded-lg text-xs font-bold bg-emerald-900 text-emerald-300 border border-emerald-700";
-        const PRACTICE_MODE_DEFAULT = "py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800";
-        const PRACTICE_TIMER_SELECTED = "py-2 rounded-lg text-xs font-black bg-rose-900 text-rose-300 border border-rose-700";
-        const PRACTICE_TIMER_DEFAULT = "py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800";
 
         function selectPracticeLength(len) {
             practiceLength = len;
-            document.querySelectorAll('[data-practice-len]').forEach(btn => {
-                btn.className = parseInt(btn.dataset.practiceLen) === len ? PRACTICE_LEN_SELECTED : PRACTICE_LEN_DEFAULT;
+            const lengths = [10, 20, 50, 100, 9999];
+            lengths.forEach(l => {
+                const btn = document.getElementById(l === 9999 ? 'btn-len-endless' : `btn-len-${l}`);
+                if (l === len) {
+                    btn.className = "py-2 rounded-lg text-xs font-black bg-emerald-900 text-emerald-300 border border-emerald-700";
+                } else {
+                    btn.className = "py-2 rounded-lg text-xs font-black bg-slate-900 text-slate-400 hover:bg-slate-800";
+                }
             });
         }
 
         function selectPracticeMode(mode) {
             practiceMode = mode;
-            document.querySelectorAll('[data-practice-mode]').forEach(btn => {
-                btn.className = btn.dataset.practiceMode === mode ? PRACTICE_MODE_SELECTED : PRACTICE_MODE_DEFAULT;
-            });
-        }
-
-        function selectPracticeTimer(seconds) {
-            practiceTimedSeconds = seconds;
-            document.querySelectorAll('[data-practice-timer]').forEach(btn => {
-                btn.className = parseInt(btn.dataset.practiceTimer) === seconds ? PRACTICE_TIMER_SELECTED : PRACTICE_TIMER_DEFAULT;
-            });
-        }
-
-        function getTimerLabel(sec) {
-            if (sec <= 0) return '不限時';
-            if (sec < 60) return `${sec} 秒`;
-            if (sec % 60 === 0) return `${sec / 60} 分鐘`;
-            const m = Math.floor(sec / 60);
-            const s = sec % 60;
-            return `${m} 分 ${s} 秒`;
-        }
-
-        function formatTimerDisplay(seconds) {
-            if (seconds < 60) return `${seconds} 秒`;
-            const m = Math.floor(seconds / 60);
-            const s = seconds % 60;
-            return `${m}:${s.toString().padStart(2, '0')}`;
-        }
-
-        function stopQuizTimer() {
-            if (quizTimerInterval) {
-                clearInterval(quizTimerInterval);
-                quizTimerInterval = null;
-            }
-        }
-
-        function updateQuizTimerDisplay() {
-            const display = document.getElementById('quiz-timer-display');
-            const box = document.getElementById('quiz-timer-box');
-            const icon = document.getElementById('quiz-timer-icon');
-            const bar = document.getElementById('quiz-progress-bar');
-            display.innerText = formatTimerDisplay(quizTimeRemaining);
-            const isUrgent = quizTimeRemaining <= 10;
-            box.className = isUrgent
-                ? "flex items-center justify-center space-x-3 bg-rose-950/50 border border-rose-500/60 rounded-2xl py-3 px-4 animate-pulse"
-                : "flex items-center justify-center space-x-3 bg-rose-950/30 border border-rose-900/40 rounded-2xl py-3 px-4";
-            icon.className = isUrgent ? "fa-solid fa-clock text-rose-300 animate-pulse" : "fa-solid fa-clock text-rose-400";
-            display.className = isUrgent ? "text-xl font-black text-rose-200 hud-font tabular-nums" : "text-xl font-black text-rose-300 hud-font tabular-nums";
-            if (practiceTimedSeconds > 0) {
-                const progressPercent = (quizTimeRemaining / practiceTimedSeconds) * 100;
-                bar.style.width = `${progressPercent}%`;
-                bar.className = isUrgent ? "h-full bg-rose-500 transition-all duration-1000" : "h-full bg-amber-500 transition-all duration-1000";
-            }
-        }
-
-        function startQuizTimer() {
-            stopQuizTimer();
-            const timerBox = document.getElementById('quiz-timer-box');
-            if (practiceTimedSeconds <= 0) {
-                timerBox.classList.add('hidden');
-                return;
-            }
-            quizTimeRemaining = practiceTimedSeconds;
-            timerBox.classList.remove('hidden');
-            updateQuizTimerDisplay();
-            quizTimerInterval = setInterval(() => {
-                quizTimeRemaining--;
-                updateQuizTimerDisplay();
-                if (quizTimeRemaining <= 0) {
-                    stopQuizTimer();
-                    handleQuizTimeUp();
+            const modes = ['classic', 'random', 'mixed'];
+            modes.forEach(m => {
+                const btn = document.getElementById(`btn-pmode-${m}`);
+                if (m === mode) {
+                    btn.className = "py-2 rounded-lg text-xs font-bold bg-emerald-900 text-emerald-300 border border-emerald-700";
+                } else {
+                    btn.className = "py-2 rounded-lg text-xs font-bold bg-slate-900 text-slate-400 hover:bg-slate-800";
                 }
-            }, 1000);
-        }
-
-        function handleQuizTimeUp() {
-            if (document.getElementById('practice-quiz-screen').classList.contains('hidden')) return;
-            showToast("時間到！", "限時挑戰結束，正在結算成績...", false);
-            finishQuizChallenge(true);
-        }
-
-        function toggleQuizSettingsPanel() {
-            const panel = document.getElementById('quiz-settings-panel');
-            const chevron = document.getElementById('quiz-settings-chevron');
-            const isHidden = panel.classList.toggle('hidden');
-            chevron.classList.toggle('rotate-180', !isHidden);
-        }
-
-        function applyQuizSettings() {
-            document.getElementById('quiz-settings-panel').classList.add('hidden');
-            document.getElementById('quiz-settings-chevron').classList.remove('rotate-180');
-            startPracticeChallenge();
-            const lenLabel = practiceLength === 9999 ? '無盡模式' : `${practiceLength} 題`;
-            const modeLabels = { classic: '經典手創', random: 'AI 隨機生成', mixed: '大師混合' };
-            const timerPart = practiceTimedSeconds > 0 ? `・限時 ${getTimerLabel(practiceTimedSeconds)}` : '';
-            showToast("設定已更新", `已套用 ${lenLabel}・${modeLabels[practiceMode]}${timerPart}，挑戰重新開始！`, false);
+            });
         }
 
         function showPracticeStartScreen() {
-            stopQuizTimer();
             document.getElementById('practice-start-screen').classList.remove('hidden');
             document.getElementById('practice-result-screen').classList.add('hidden');
             document.getElementById('practice-quiz-screen').classList.add('hidden');
         }
 
         function startPracticeChallenge() {
-            stopQuizTimer();
             quizActiveQuestions = [];
             currentQuizIndex = 0;
             quizCorrectCount = 0;
-            quizAnsweredCount = 0;
 
-            const isTimed = practiceTimedSeconds > 0;
-            const totalCount = (isTimed || practiceLength === 9999) ? 1000 : practiceLength;
+            const totalCount = practiceLength === 9999 ? 1000 : practiceLength; // 9999為無盡模式
 
             if (practiceMode === 'classic') {
                 // 經典手創模式：從 CLASSIC 庫中洗牌，不足的話動態補充隨機
@@ -3574,11 +3405,8 @@
             document.getElementById('practice-start-screen').classList.add('hidden');
             document.getElementById('practice-result-screen').classList.add('hidden');
             document.getElementById('practice-quiz-screen').classList.remove('hidden');
-            document.getElementById('quiz-settings-panel').classList.add('hidden');
-            document.getElementById('quiz-settings-chevron').classList.remove('rotate-180');
 
             loadQuizQuestion(0);
-            startQuizTimer();
         }
 
         function loadQuizQuestion(idx) {
@@ -3588,16 +3416,10 @@
             renderVisualMahjongTiles(q.tiles, 'quiz-tiles-visual-container');
 
             const isEndless = practiceLength === 9999;
-            const isTimed = practiceTimedSeconds > 0;
-            if (isTimed) {
-                document.getElementById('quiz-progress-num').innerText = `第 ${idx + 1} 題 (限時挑戰)`;
-                updateQuizTimerDisplay();
-            } else {
-                document.getElementById('quiz-progress-num').innerText = isEndless ? `第 ${idx + 1} 題 (無盡挑戰)` : `${idx + 1} / ${practiceLength}`;
-                const progressPercent = isEndless ? 100 : ((idx + 1) / practiceLength) * 100;
-                document.getElementById('quiz-progress-bar').style.width = `${progressPercent}%`;
-                document.getElementById('quiz-progress-bar').className = "h-full bg-emerald-500 transition-all duration-300";
-            }
+            document.getElementById('quiz-progress-num').innerText = isEndless ? `第 ${idx + 1} 題 (無盡挑戰)` : `${idx + 1} / ${practiceLength}`;
+            
+            const progressPercent = isEndless ? 100 : ((idx + 1) / practiceLength) * 100;
+            document.getElementById('quiz-progress-bar').style.width = `${progressPercent}%`;
             document.getElementById('quiz-score-num').innerText = `${quizCorrectCount} 題`;
 
             const container = document.getElementById('quiz-options-container');
@@ -3622,7 +3444,6 @@
         function submitQuizAnswer(selectedIdx) {
             if (hasAnsweredCurrent) return;
             hasAnsweredCurrent = true;
-            quizAnsweredCount++;
 
             const q = quizActiveQuestions[currentQuizIndex];
             const isCorrect = (selectedIdx === q.correct);
@@ -3683,11 +3504,8 @@
 
             const nextBtn = document.getElementById('btn-quiz-next');
             const isEndless = practiceLength === 9999;
-            const isTimed = practiceTimedSeconds > 0;
             
-            if (isTimed) {
-                nextBtn.innerHTML = `<span>下一題</span> <i class="fa-solid fa-arrow-right"></i>`;
-            } else if (isEndless) {
+            if (isEndless) {
                 if (!isCorrect) {
                     nextBtn.innerHTML = `<span>無盡挑戰中止，查看結算報告</span> <i class="fa-solid fa-square-poll-vertical"></i>`;
                 } else {
@@ -3705,19 +3523,6 @@
         }
 
         function nextQuizQuestion() {
-            if (practiceTimedSeconds > 0) {
-                if (quizTimeRemaining <= 0) {
-                    finishQuizChallenge(true);
-                    return;
-                }
-                currentQuizIndex++;
-                if (currentQuizIndex >= quizActiveQuestions.length) {
-                    quizActiveQuestions.push(generateProceduralQuestion());
-                }
-                loadQuizQuestion(currentQuizIndex);
-                return;
-            }
-
             const isEndless = practiceLength === 9999;
             if (isEndless) {
                 const feedbackTitle = document.getElementById('feedback-title').className;
@@ -3742,51 +3547,25 @@
             }
         }
 
-        function finishQuizChallenge(timeUp = false) {
-            stopQuizTimer();
+        function finishQuizChallenge() {
             document.getElementById('practice-quiz-screen').classList.add('hidden');
             document.getElementById('practice-result-screen').classList.remove('hidden');
 
-            const isTimed = practiceTimedSeconds > 0;
             const isEndless = practiceLength === 9999;
-            const finalTotal = isTimed ? quizAnsweredCount : (isEndless ? currentQuizIndex : practiceLength);
+            const finalTotal = isEndless ? currentQuizIndex : practiceLength;
             
             let percent = 0;
             if (finalTotal > 0) {
                 percent = Math.round((quizCorrectCount / finalTotal) * 100);
             }
             
-            if (isTimed) {
-                const timerLabel = getTimerLabel(practiceTimedSeconds);
-                document.getElementById('result-score-percent').innerText = `${quizCorrectCount} 題`;
-                document.getElementById('result-score-text').innerText = timeUp
-                    ? `限時 ${timerLabel} 時間到！共答對 ${quizCorrectCount} / ${quizAnsweredCount} 題`
-                    : `限時 ${timerLabel} 內共答對 ${quizCorrectCount} / ${quizAnsweredCount} 題`;
-            } else {
-                document.getElementById('result-score-percent').innerText = isEndless ? `${quizCorrectCount} 關` : `${percent}%`;
-                document.getElementById('result-score-text').innerText = isEndless ? `在無盡挑戰中成功撐過 ${quizCorrectCount} 關！` : `共答對 ${quizCorrectCount} / ${practiceLength} 題`;
-            }
+            document.getElementById('result-score-percent').innerText = isEndless ? `${quizCorrectCount} 關` : `${percent}%`;
+            document.getElementById('result-score-text').innerText = isEndless ? `在無盡挑戰中成功撐過 ${quizCorrectCount} 關！` : `共答對 ${quizCorrectCount} / ${practiceLength} 題`;
 
             const badge = document.getElementById('result-badge');
             const evalText = document.getElementById('result-evaluation-text');
 
-            if (isTimed) {
-                if (quizCorrectCount >= 20) {
-                    badge.innerHTML = `<i class="fa-solid fa-crown mr-1"></i>限時雀神`;
-                    badge.className = "inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 border border-amber-500 text-amber-400 mt-4 animate-bounce";
-                    evalText.innerText = `太強了！在 ${getTimerLabel(practiceTimedSeconds)} 的限時壓力下仍連續答對 ${quizCorrectCount} 題，你的聽牌反應速度已達頂尖水準！`;
-                } else if (quizCorrectCount >= 8) {
-                    badge.innerHTML = `<i class="fa-solid fa-star mr-1"></i>限時聽牌達人`;
-                    badge.className = "inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 border border-emerald-500 text-emerald-400 mt-4";
-                    evalText.innerText = `厲害！限時模式下答對 ${quizCorrectCount} 題，牌型拆解又快又準。再多練幾次限時挑戰，實戰讀牌速度會更快！`;
-                } else {
-                    badge.innerHTML = `<i class="fa-solid fa-seedling mr-1"></i>再接再厲`;
-                    badge.className = "inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-slate-800 border border-slate-700 text-slate-400 mt-4";
-                    evalText.innerText = timeUp
-                        ? "時間到！限時挑戰考驗的是瞬間判斷力。多練幾次，熟悉常見搭子結構後，你的答題速度一定會大幅提升！"
-                        : "限時挑戰需要快速拆解牌型。建議先熟悉基本兩面聽與中洞，再來挑戰更短的限時模式！";
-                }
-            } else if (isEndless) {
+            if (isEndless) {
                 if (quizCorrectCount >= 50) {
                     badge.innerHTML = `<i class="fa-solid fa-crown mr-1"></i>黃金雀神`;
                     badge.className = "inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 border border-amber-500 text-amber-400 mt-4 animate-bounce";
